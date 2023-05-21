@@ -2,9 +2,11 @@ import './App.css';
 import data from './data.json'
 import {useState} from "react"
 function Main() {
+    const checks = ["day", "health", "rep", "money"]
    const [event, setEvent] = useState(0)
    const [chosenOption, setchosenOption] = useState(undefined)
   const [stats, setStats] = useState({day: 0,health: 100, rep: 30, money: 0})
+  const {money, health, rep} = stats
   const {events} = data
   const curEvent = events[event];
 
@@ -14,7 +16,29 @@ function Main() {
     setStats({day: stats.day,health: stats.health+curEvent["options"][idx].health, rep: stats.rep+curEvent["options"][idx].rep, money: stats.money+curEvent["options"][idx].money})
   }
   function newEvent(){
-    const nextEvent = Math.floor(Math.random() * events.length)
+    var nextEvent = Math.floor(Math.random() * events.length)
+    if(money < 0 || health < 0){
+        //Make the player lose
+    }
+    else if(rep < 0){
+        //make player get fired
+    }
+    else if(chosenOption["nextEvent"]){
+        nextEvent = chosenOption["nextEvent"]
+    }else {
+        console.log("random")
+        while (true){
+            var flag = true;
+            var testEvent = events[nextEvent]["preReq"]
+            for(var x in checks){
+                if(testEvent[x] > stats[x])flag = false
+            }
+            console.log(flag + " " + events[nextEvent]["locked"])
+            if(flag && !events[nextEvent]["locked"])break;
+            else nextEvent = Math.floor(Math.random() * events.length)
+        }
+    }
+    
     setEvent(nextEvent)
     setchosenOption(undefined)
     setStats({ ...stats,day: stats.day+1})

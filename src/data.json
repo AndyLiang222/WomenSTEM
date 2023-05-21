@@ -1,7 +1,73 @@
 {
     "events":[
         {
-            "desc": "Event Description",
+            "desc": "Choose Job",
+            "locked":true,
+            "preReq":{
+                "health": 0,
+                "rep": 0,
+                "money": 0
+            },
+            "options":[
+                {
+                    "desc":"Option 1",
+                    "health": 1,
+                    "rep":-1,
+                    "money":1,
+                    "resultDesc":"Result of the Choice 1"
+                },
+                {
+                    "desc":"Option 2",
+                    "health": 0,
+                    "rep":50,
+                    "money":0,
+                    "resultDesc":"Result of the Choice 2",
+                    "nextEvent":1
+                },
+                {
+                    "desc":"Option 3",
+                    "health": -50,
+                    "rep":-10,
+                    "money":100,
+                    "resultDesc":"Result of the Choice 3",
+                    "nextEvent": 2
+                }
+            ]
+        },
+        {
+            "desc": "Event 2",
+            "locked":true,
+            "preReq":{
+                "health": 0,
+                "rep": 0,
+                "money": 0
+            },
+            "options":[
+                {
+                    "desc":"Option 1",
+                    "health": 1,
+                    "rep":-1,
+                    "money":1,
+                    "resultDesc":"Result of the Choice 1"
+                },
+                {
+                    "desc":"Option 2",
+                    "health": 0,
+                    "rep":50,
+                    "money":0,
+                    "resultDesc":"Result of the Choice 2",
+                    "nextEvent": 1
+                }
+            ]
+        },
+        {
+            "desc": "Event 3",
+            "locked":false,
+            "preReq":{
+                "health": 0,
+                "rep": 0,
+                "money": 0
+            },
             "options":[
                 {
                     "desc":"Option 1",
@@ -15,14 +81,8 @@
                     "health": 0,
                     "rep":50,
                     "money":0,
-                    "resultDesc":"Result of the Choice 2"
-                },
-                {
-                    "desc":"Option 3",
-                    "health": -50,
-                    "rep":-10,
-                    "money":100,
-                    "resultDesc":"Result of the Choice 3"
+                    "resultDesc":"Result of the Choice 2",
+                    "nextEvent":2
                 }
             ]
         }
