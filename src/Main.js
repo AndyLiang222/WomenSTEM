@@ -1,8 +1,26 @@
 import './App.css';
 import data from './data.json'
 import React,{useState} from "react"
-import {Button} from './Components.js'
+import styled from 'styled-components';
+import Components from './Components.js'
+const {Button, Background} = Components
+const DescDiv = styled.div`
+    padding: 0px 300px;
+    margin: 75px 0px;
+`
+const ButtonDiv = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+`
+const OptionButton = styled(Button)`
+    width: 300px;
+    margin:10px;
+`
 function Main() {
+    
     const checks = ["day", "health", "rep", "money"]
    const [event, setEvent] = useState(0)
    const [chosenOption, setchosenOption] = useState(undefined)
@@ -58,23 +76,26 @@ function Main() {
         {!chosenOption &&
             
                 <div className='Choice'>
-                    <div className='description'>
+                    <DescDiv className='description'>
                         {curEvent["desc"]}
-                    </div>
+                    </DescDiv>
                     
                     <div className='Options'>
-                        <div className = 'Buttons'>
-                            {curEvent["options"].map((option,idx)=>{return <div onClick={() => {optionSelect(idx)}}>{option["desc"]}</div>})}
-                        </div>
+                        <ButtonDiv className = 'Buttons'>
+                            {curEvent["options"].map((option,idx)=>{return <OptionButton onClick={() => {optionSelect(idx)}}>{option["desc"]}</OptionButton>})}
+                        </ButtonDiv>
                     </div>`
                 </div>
             }
         {chosenOption &&
             <div className='Result'>
-                <div className='Result-Desc'>{chosenOption.resultDesc}</div>
-                <div className='Button-Continue' onClick={newEvent}>
-                    Continue
-                </div>
+                <DescDiv className='Result-Desc'>{chosenOption.resultDesc}</DescDiv>
+                <ButtonDiv>
+                    <OptionButton className='Button-Continue' onClick={newEvent}>
+                        Continue
+                    </OptionButton> 
+                </ButtonDiv>
+                
             </div>
             
         }

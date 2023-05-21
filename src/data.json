@@ -1,7 +1,7 @@
 {
     "events":[
         {
-            "desc": "Choose Job",
+            "desc": " Congratulations! You have just graduated from a prestigious university in Canada earning you a degree in STEM. It is now time for you to begin your career journey and climb the corporate ladder. What career are you going into?",
             "locked":true,
             "preReq":{
                 "health": 0,
@@ -10,27 +10,25 @@
             },
             "options":[
                 {
-                    "desc":"Option 1",
-                    "health": 1,
-                    "rep":-1,
-                    "money":1,
-                    "resultDesc":"Result of the Choice 1"
-                },
-                {
-                    "desc":"Option 2",
+                    "desc":"Sciences",
+                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a researcher for a big science organization. Biology and Chemistry career are most common for women as 60% and 50% of degrees respectively are earned by women.",
                     "health": 0,
-                    "rep":50,
-                    "money":0,
-                    "resultDesc":"Result of the Choice 2",
-                    "nextEvent":1
+                    "rep":0,
+                    "money":0
                 },
                 {
-                    "desc":"Option 3",
-                    "health": -50,
-                    "rep":-10,
-                    "money":100,
-                    "resultDesc":"Result of the Choice 3",
-                    "nextEvent": 2
+                    "desc":"Engineering",
+                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a mechanical engineer for a car manufacturer. Only around 1 in 5 of engineering degrees are earned by women.",
+                    "health": 0,
+                    "rep":0,
+                    "money":0
+                },
+                {
+                    "desc":"Computer Science",
+                    "resultDesc":"Only 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company.",
+                    "health": 0,
+                    "rep":0,
+                    "money":0
                 }
             ]
         },
