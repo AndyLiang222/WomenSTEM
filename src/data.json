@@ -1,14 +1,28 @@
 {
     "events":[
         {
-            "desc": "TEMPEMPEMPMTEPT",
+            "desc": "Event Description",
             "options":[
                 {
-                    "desc":"TEMP",
+                    "desc":"Option 1",
                     "health": 1,
                     "rep":-1,
                     "money":1,
-                    "resultDesc":"TEMPTEMPTEMP"
+                    "resultDesc":"Result of the Choice 3"
+                },
+                {
+                    "desc":"Option 2",
+                    "health": 0,
+                    "rep":50,
+                    "money":0,
+                    "resultDesc":"Result of the Choice 2"
+                },
+                {
+                    "desc":"Option 3",
+                    "health": -50,
+                    "rep":-10,
+                    "money":100,
+                    "resultDesc":"Result of the Choice 3"
                 }
             ]
         }
