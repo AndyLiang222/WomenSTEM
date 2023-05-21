@@ -33,28 +33,38 @@
             ]
         },
         {
-            "desc": "Event 2",
-            "locked":true,
+            "desc": "One of your male co-workers, Justin Lin💀, approaches you and asks if you want to go out for dinner with him after work 👀. Despite repeatedly refusing, he stays persistent. How do you respond?",
+            "locked":false,
             "preReq":{
+                "day": 1,
                 "health": 0,
                 "rep": 0,
                 "money": 0
             },
             "options":[
                 {
-                    "desc":"Option 1",
-                    "health": 1,
-                    "rep":-1,
-                    "money":1,
-                    "resultDesc":"Result of the Choice 1"
+                    "desc":"Give in, say Yes",
+                    "health": -20,
+                    "rep":5,
+                    "money":0,
+                    "resultDesc":"You begrudgingly say yes and schedule a date."
                 },
                 {
-                    "desc":"Option 2",
+                    "desc":"Keep Refusing",
                     "health": 0,
-                    "rep":50,
+                    "rep":-10,
                     "money":0,
-                    "resultDesc":"Result of the Choice 2",
-                    "nextEvent": 1
+                    "resultDesc":"He keeps on pushing but you stay strong on your stance until he eventually gives up. 36% of women in STEM say sexual harassment is a problem in their workplace."
+                    
+                },
+                {
+                    "desc":"Report to HR",
+                    "health": -5,
+                    "rep":-30,
+                    "money":0,
+                    "resultDesc":"You report him to HR and he gets a warning. You notice that coworkers around you are becoming less friendly and uneasy around you."
+
+                    
                 }
             ]
         },
