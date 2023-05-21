@@ -1,6 +1,7 @@
 import './App.css';
 import data from './data.json'
-import {useState} from "react"
+import React,{useState} from "react"
+import {Button} from './Components.js'
 function Main() {
     const checks = ["day", "health", "rep", "money"]
    const [event, setEvent] = useState(0)
