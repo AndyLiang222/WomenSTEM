@@ -1,0 +1,16 @@
+{
+    "events":[
+        {
+            "desc": "TEMPEMPEMPMTEPT",
+            "options":[
+                {
+                    "desc":"TEMP",
+                    "health": 1,
+                    "rep":-1,
+                    "money":1,
+                    "resultDesc":"TEMPTEMPTEMP"
+                }
+            ]
+        }
+    ]
+}

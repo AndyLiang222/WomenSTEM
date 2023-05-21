@@ -1,6 +1,9 @@
 import './App.css';
+import {useState} from "react"
 
-function Home() {
+function Home(props) {
+  const {onClick} = props.props
+
   return (
     <div className="Home">
       <div className='Title'>
@@ -9,7 +12,7 @@ function Home() {
       <div className='description'>
         TempTempTempTempTempTempTempTempTempTempTemp
       </div>
-      <div className='Button'>Insert Button Here</div>
+      <div className='Button' onClick={()=>{onClick()}}>Insert Button Here</div>
     </div>
   );
 }
