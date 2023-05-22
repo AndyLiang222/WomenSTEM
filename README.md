@@ -20,3 +20,13 @@ health, money, rep: how much to change each stat
 result description: what to show user based on the choice made
 
 nextEvent: optional, force sends user to a subsequent event
+
+
+
+To-DO list:
+
+- Add more events (event ideas on doc)
+- Make money increase every day you work given base salary for job
+- Add game over events (when reputation goes too low you get fired, when mental health goes too low you quit)
+- Add more css
+- add images for events maybe
