@@ -69,23 +69,109 @@
             ]
         },
         {
-            "desc": "Event 3",
+            "desc": "During a pivotal project meeting, your boss delegates a highly intricate task to you. In response, one of your colleagues passive-aggressively interjects, implying a lack of confidence in your ability to handle such a challenging assignment. How do you respond?",
             "locked":false,
             "preReq":{
+                "day": 1,
                 "health": 0,
                 "rep": 0,
                 "money": 0
             },
             "options":[
                 {
-                    "desc":"Option 1",
+                    "desc":"Ignore",
+                    "health": -5,
+                    "rep":0,
+                    "money":0,
+                    "resultDesc":"You say nothing and your boss assigns you a entry level task that takes you only a couple hours. 29% of women in STEM workplaces say they were treated as not competent."
+                },
+                {
+                    "desc":"Confront in meeting",
+                    "health": 5,
+                    "rep":5,
+                    "money":0,
+                    "resultDesc":"You immediately stand up stating you are more than qualified to complete this task. Your stunned co-workers are silent for a moment and give you the difficult task. 64% of women believe that they feel the need to prove themselves at work in STEM jobs."
+                },
+                {
+                    "desc":"Confront after meeting",
+                    "health": 0,
+                    "rep":-5,
+                    "money":0,
+                    "resultDesc":"You wait until the meeting is over to confront your co-worker once everyone leaves. You tell him how you didn’t appreciate his comments and would like to be treated as equals. He says that the meeting is over and there’s nothing he can do about it then gives a half-hearted apology."
+                }
+            ]
+        },
+        {
+            "desc": "After work, you decide to look over your paycheck from last week. You notice that you make marginally less than you male co-worker in the same position. How do you respond?",
+            "locked":false,
+            "preReq":{
+                "day": 1,
+                "health": 0,
+                "rep": 0,
+                "money": 0
+            },
+            "options":[
+                {
+                    "desc":"Ignore",
+                    "health": -5,
+                    "rep":0,
+                    "money":0,
+                    "resultDesc":"You decide its not worth the risk to confront and you make enough as is. 29% of women make less money than a male doing the same job."
+                },
+                {
+                    "desc":"Confront your boss",
+                    "health": 0,
+                    "rep":0,
+                    "money":0,
+                    "resultDesc":"You arrange a meeting with your boss to discuss the disparity in your compensation. Throughout the conversation, he evades the topic until eventually concluding by saying he will look into it."
+                }
+            ]
+        },
+        {
+            "desc": "In light of a recent event where one of the women in your predominantly male workplace was terminated, you find yourself growing increasingly concerned about the noticeable absence of gender diversity within your organization. How do you respond?",
+            "locked":false,
+            "preReq":{
+                "day": 1,
+                "health": 0,
+                "rep": 0,
+                "money": 0
+            },
+            "options":[
+                {
+                    "desc":"Ignore",
+                    "health": 1,
+                    "rep":-1,
+                    "money":1,
+                    "resultDesc":"You decide its not worth the risk to confront and you like your job anyway. 31% of women say their workplace pays too little attention to increasing gender diversity."
+                },
+                {
+                    "desc":"Confront your boss",
+                    "health": 0,
+                    "rep":0,
+                    "money":0,
+                    "resultDesc":"You arrange a meeting with your boss to address the lack of gender diversity. Your boss tells you that there is no issue and every worker here is treated equally no matter their gender. 31% of women say their workplace pays too little attention to increasing gender diversity. "
+                }
+            ]
+        },
+        {
+            "desc": "Event 3",
+            "locked":false,
+            "preReq":{
+                "day": 1,
+                "health": 0,
+                "rep": 0,
+                "money": 0
+            },
+            "options":[
+                {
+                    "desc":"Option1",
                     "health": 1,
                     "rep":-1,
                     "money":1,
                     "resultDesc":"Result of the Choice 3"
                 },
                 {
-                    "desc":"Option 2",
+                    "desc":"Option2",
                     "health": 0,
                     "rep":50,
                     "money":0,
