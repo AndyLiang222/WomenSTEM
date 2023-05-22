@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/WomenSTEM/static/css/main.073c9b0a.css",
+    "main.js": "/WomenSTEM/static/js/main.d8b67e58.js",
+    "static/media/Background.avif": "/WomenSTEM/static/media/Background.8d1f228316cabb28bb7f.avif",
+    "index.html": "/WomenSTEM/index.html",
+    "main.073c9b0a.css.map": "/WomenSTEM/static/css/main.073c9b0a.css.map",
+    "main.d8b67e58.js.map": "/WomenSTEM/static/js/main.d8b67e58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d8b67e58.js"
+  ]
+}
