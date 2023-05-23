@@ -39,11 +39,13 @@ function Main(props) {
   const {salary, health, rep} = stats
   const {events} = data
   const curEvent = events[event];
-
+  function format(x){
+    
+  }
   function optionSelect(idx){
     setchosenOption(curEvent["options"][idx])
     console.log(curEvent["options"][idx])
-    setStats({day: stats.day,health: stats.health+curEvent["options"][idx].health, rep: stats.rep+curEvent["options"][idx].rep, salary: stats.salary+curEvent["options"][idx].salary})
+    setStats({day: stats.day,health: Math.max(0,stats.health+curEvent["options"][idx].health), rep: Math.max(0,stats.rep+curEvent["options"][idx].rep), salary: Math.max(0,stats.salary+curEvent["options"][idx].salary)})
   }
   function newEvent(){
     if(event == 1 || event == 2){
@@ -69,7 +71,7 @@ function Main(props) {
                 if(testEvent[x] > stats[x])flag = false
             }
             console.log(flag + " " + events[nextEvent]["locked"])
-            if(flag && !events[nextEvent]["locked"])break;
+            if(flag && !events[nextEvent]["locked"] && event != nextEvent)break;
             else nextEvent = Math.floor(Math.random() * events.length)
         }
     }
@@ -84,8 +86,8 @@ function Main(props) {
         Day {stats.day}
       </TitleDiv>
       <div className='Stats'>
-        <div className='Health'><b>Mental Health:</b> {stats.health}</div>
-        <div className='Rep'><b>Reputation:</b> {stats.rep}</div>
+        <div className='Health'><b>Mental Health:</b> {(stats.health == 0)?"💀":stats.health}</div>
+        <div className='Rep'><b>Reputation:</b> {(stats.rep == 0)?"💀":stats.rep}</div>
         <div className='salary'><b>Salary: </b>{formatter.format(stats.salary)}</div>
       </div>
       <div className='Container'>

@@ -29,14 +29,8 @@
                     "health": 0,
                     "rep":0,
                     "salary":86157
-                },
-                {
-                    "desc":"Computer Science",
-                    "resultDesc":"The Computer field is one of the most male dominated fields. Only about 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company. The average annual salary of a women in computers is $86,157.",
-                    "health": -100,
-                    "rep":0,
-                    "salary":86157
                 }
+                
             ]
         },
         {
