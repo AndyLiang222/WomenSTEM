@@ -67,9 +67,10 @@ function Main(props) {
         while (true){
             var flag = true;
             var testEvent = events[nextEvent]["preReq"]
-            for(var x in checks){
-                if(testEvent[x] > stats[x])flag = false
-            }
+            
+
+            if( testEvent.day > stats.day || testEvent.rep > stats.rep || testEvent.health > stats.health)flag = false
+            
             console.log(flag + " " + events[nextEvent]["locked"])
             if(flag && !events[nextEvent]["locked"] && event != nextEvent)break;
             else nextEvent = Math.floor(Math.random() * events.length)

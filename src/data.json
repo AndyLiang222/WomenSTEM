@@ -37,7 +37,7 @@
             "desc": "Your open you email and notice a suspicious new email from your boss scheduling a meeting with you today at 5:00pm. You respond and anxiously wait for the time to come.",
             "locked":true,
             "preReq":{
-                "day": 1,
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
@@ -56,7 +56,7 @@
             "desc": "For the past few weeks you feel as though work has been taking a significant toll on your mental health inside and outside of work. You decide that the gender in-equality in STEM and the effects it has on you is too much.",
             "locked":true,
             "preReq":{
-                "day": 1,
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
@@ -75,7 +75,7 @@
             "desc": "One of your male co-workers, Justin Lin💀, approaches you and asks if you want to go out for dinner with him after work 👀. Despite repeatedly refusing, he stays persistent. How do you respond?",
             "locked":false,
             "preReq":{
-                "day": 1,
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
@@ -111,7 +111,7 @@
             "desc": "During a pivotal project meeting, your boss delegates a highly intricate task to you. In response, one of your colleagues passive-aggressively interjects, implying a lack of confidence in your ability to handle such a challenging assignment. How do you respond?",
             "locked":false,
             "preReq":{
-                "day": 1,
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
@@ -144,7 +144,7 @@
             "desc": "After work, you decide to look over your paycheck from last week. You notice that you make marginally less than you male co-worker in the same position. How do you respond?",
             "locked":false,
             "preReq":{
-                "day": 1,
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
@@ -170,7 +170,7 @@
             "desc": "In light of a recent event where one of the women in your predominantly male workplace was terminated, you find yourself growing increasingly concerned about the noticeable absence of gender diversity within your organization. How do you respond?",
             "locked":false,
             "preReq":{
-                "day": 1,
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
@@ -215,7 +215,7 @@
             "desc": "Template",
             "locked":true,
             "preReq":{
-                "day": 1,
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
