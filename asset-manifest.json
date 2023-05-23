@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/WomenSTEM/static/css/main.073c9b0a.css",
-    "main.js": "/WomenSTEM/static/js/main.9b0a27eb.js",
+    "main.js": "/WomenSTEM/static/js/main.b827bf77.js",
     "static/media/Background.avif": "/WomenSTEM/static/media/Background.8d1f228316cabb28bb7f.avif",
     "index.html": "/WomenSTEM/index.html",
     "main.073c9b0a.css.map": "/WomenSTEM/static/css/main.073c9b0a.css.map",
-    "main.9b0a27eb.js.map": "/WomenSTEM/static/js/main.9b0a27eb.js.map"
+    "main.b827bf77.js.map": "/WomenSTEM/static/js/main.b827bf77.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.9b0a27eb.js"
+    "static/js/main.b827bf77.js"
   ]
 }
