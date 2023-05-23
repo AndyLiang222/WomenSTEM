@@ -48,7 +48,7 @@ function Main(props) {
     setStats({day: stats.day,health: Math.max(0,stats.health+curEvent["options"][idx].health), rep: Math.max(0,stats.rep + curEvent["options"][idx].rep), salary: Math.max(0,Math.floor((((curEvent["options"][idx].salary)?curEvent["options"][idx].salary:0)+1.00)*stats.salary))})
   }
   function newEvent(){
-    if(event == 1 || event == 2){
+    if(event == 1 || event == 2|| event == 3){
         endGame();
     }
     var nextEvent = Math.floor(Math.random() * events.length)

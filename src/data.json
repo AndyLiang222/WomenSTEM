@@ -1,38 +1,72 @@
 {
     "events":[
         {
-            "desc": " Congratulations! You have just graduated from a prestigious university in Canada earning you a degree in STEM. It is now time for you to begin your career journey and climb the corporate ladder. What career are you going into?",
+            "desc": "On February 22nd 2005, a baby girl was born into a middle-class suburban household in Ontario, Canada. Growing up you go through school studying hard and working toward you dream career of...",
             "locked":true,
             "preReq":{
+                "day": 0,
                 "health": 0,
                 "rep": 0,
                 "salary": 0
             },
             "options":[
                 {
-                    "desc":"Sciences",
-                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a researcher for a big science organization. Biology and Chemistry career are most common for women as 60% and 50% of degrees respectively are earned by women. The average annual salary of a women in sciences is $59,242.",
+                    "desc":"House Wife",
                     "health": 0,
                     "rep":0,
-                    "salary":59241
+                    "salary":0,
+                    "resultDesc":"You decided to become a house wife.",
+                    "nextEvent": 1
                 },
                 {
-                    "desc":"Engineering",
-                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a mechanical engineer for a car manufacturer. Only around 1 in 5 of engineering degrees are earned by women. The average annual salary of a women in engineering is $69,416.",
+                    "desc":"Baby Sitter",
                     "health": 0,
                     "rep":0,
-                    "salary":69415
+                    "salary":0,
+                    "resultDesc":"You decided to become a babysitter.",
+                    "nextEvent": 1
+                    
                 },
                 {
-                    "desc":"Computer Science",
-                    "resultDesc":"The Computer field is one of the most male dominated fields. Only about 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company. The average annual salary of a women in computers is $86,157.",
+                    "desc":"Teacher",
                     "health": 0,
-                    "rep":100,
-                    "salary":86156
+                    "rep":0,
+                    "salary":0,
+                    "resultDesc":"You decided to become a teacher.",
+                    "nextEvent": 1
+                },
+                {
+                    "desc":"STEM",
+                    "health": 0,
+                    "rep":0,
+                    "salary":0,
+                    "resultDesc":"You decided to go into STEM.",
+                    "nextEvent": 4
+
+                    
                 }
-                
             ]
         },
+        {
+            "desc": "You live the life of a stereotypical women trapped within the patriarchal society.",
+            "locked":true,
+            "preReq":{
+                "day": 0,
+                "health": 0,
+                "rep": 0,
+                "salary": 0
+            },
+            "options":[
+                {
+                    "desc":"Continue",
+                    "health": 0,
+                    "rep":0,
+                    "salary":0,
+                    "resultDesc":"Play Again."
+                }
+            ]
+        }
+        ,
         {
             "desc": "Your open you email and notice a suspicious new email from your boss scheduling a meeting with you today at 5:00pm. You respond and anxiously wait for the time to come.",
             "locked":true,
@@ -72,6 +106,40 @@
             ]
         },
         {
+            "desc": " Congratulations! You have just graduated from a prestigious university in Canada earning you a degree in STEM. It is now time for you to begin your career journey and climb the corporate ladder. What career are you going into?",
+            "locked":true,
+            "preReq":{
+                "health": 0,
+                "rep": 0,
+                "salary": 0
+            },
+            "options":[
+                {
+                    "desc":"Sciences",
+                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a researcher for a big science organization. Biology and Chemistry career are most common for women as 60% and 50% of degrees respectively are earned by women. The average annual salary of a women in sciences is $59,242.",
+                    "health": 0,
+                    "rep":0,
+                    "salary":59241
+                },
+                {
+                    "desc":"Engineering",
+                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a mechanical engineer for a car manufacturer. Only around 1 in 5 of engineering degrees are earned by women. The average annual salary of a women in engineering is $69,416.",
+                    "health": 0,
+                    "rep":0,
+                    "salary":69415
+                },
+                {
+                    "desc":"Computer Science",
+                    "resultDesc":"The Computer field is one of the most male dominated fields. Only about 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company. The average annual salary of a women in computers is $86,157.",
+                    "health": 0,
+                    "rep":0,
+                    "salary":86156
+                }
+                
+            ]
+        }
+        ,
+        {
             "desc": "One of your male co-workers, Justin Lin💀, approaches you and asks if you want to go out for dinner with him after work 👀. Despite repeatedly refusing, he stays persistent. How do you respond?",
             "locked":false,
             "preReq":{
@@ -84,7 +152,7 @@
                 {
                     "desc":"Give in, say Yes",
                     "health": -20,
-                    "rep":5,
+                    "rep":10,
                     "salary":0,
                     "resultDesc":"You begrudgingly say yes and schedule a date."
                 },
@@ -120,14 +188,14 @@
                 {
                     "desc":"Ignore",
                     "health": -5,
-                    "rep":0,
+                    "rep":5,
                     "salary":0,
                     "resultDesc":"You say nothing and your boss assigns you a entry level task that takes you only a couple hours. 29% of women in STEM workplaces say they were treated as not competent."
                 },
                 {
                     "desc":"Confront in meeting",
                     "health": 5,
-                    "rep":5,
+                    "rep":10,
                     "salary":0,
                     "resultDesc":"You immediately stand up stating you are more than qualified to complete this task. Your stunned co-workers are silent for a moment and give you the difficult task. 64% of women believe that they feel the need to prove themselves at work in STEM jobs."
                 },
@@ -153,7 +221,7 @@
                 {
                     "desc":"Ignore",
                     "health": -5,
-                    "rep":0,
+                    "rep":5,
                     "salary":0,
                     "resultDesc":"You decide its not worth the risk to confront and you make enough as is. 29% of women make less money than a male doing the same job."
                 },
@@ -179,7 +247,7 @@
                 {
                     "desc":"Ignore",
                     "health": 0,
-                    "rep":0,
+                    "rep":5,
                     "salary":0,
                     "resultDesc":"You decide its not worth the risk to confront and you like your job anyway. 31% of women say their workplace pays too little attention to increasing gender diversity."
                 },
@@ -212,6 +280,32 @@
             ]
         },
         {
+            "desc": "Today, one of your male co-workers got a promotion despite doing less work than you. How do you respond?",
+            "locked":false,
+            "preReq":{
+                "day": 0,
+                "health": 0,
+                "rep": 0,
+                "salary": 0
+            },
+            "options":[
+                {
+                    "desc":"Ignore",
+                    "health": -10,
+                    "rep":5,
+                    "salary":0,
+                    "resultDesc":"You decide its not worth the risk to confront and you make good money anyway. Only 38% of women say that women are usually treated fairly for opportunities for promotion and advancement in a mostly male workplace."
+                },
+                {
+                    "desc":"Confront your boss",
+                    "health": -5,
+                    "rep":0,
+                    "salary":0,
+                    "resultDesc":"You arrange a meeting with your boss to voice your frustration. He tells you to keep working hard and eventually you will be rewarded. Only 38% of women say that women are usually treated fairly for opportunities for promotion and advancement in a mostly male workplace."
+                }
+            ]
+        },
+        {
             "desc": "Template",
             "locked":true,
             "preReq":{
@@ -231,10 +325,9 @@
                 {
                     "desc":"Option2",
                     "health": 0,
-                    "rep":50,
+                    "rep":0,
                     "salary":0,
-                    "resultDesc":"Result of the Choice 2",
-                    "nextEvent":2
+                    "resultDesc":"Result of the Choice 2"
                 }
             ]
         }
