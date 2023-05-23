@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Background className = "Background">
         {!start && <Home props = {{onClick: startGame}}></Home>}
-        {start && <Main></Main>}
+        {start && <Main  props = {{endGame: () => setStart(false)}}></Main>}
       </Background>
     </div>
   );

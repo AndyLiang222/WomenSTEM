@@ -31,7 +31,7 @@ function Home(props) {
         Women in STEM Workplace Simulator
       </TitleDiv>
       <DescDiv className='description'>
-      an empowering and educational game that seeks to shed light on the gender inequality prevalent in the field of Science, Technology, Engineering, and Mathematics (STEM). In this thought-provoking simulation, players will step into the shoes of remarkable women scientists, engineers, and mathematicians throughout history, facing challenges, overcoming obstacles, and striving to make their mark in the male-dominated world of STEM.
+      An empowering and educational game that seeks to shed light on the gender inequality prevalent in the field of Science, Technology, Engineering, and Mathematics (STEM). In this thought-provoking simulation, players will step into the shoes of remarkable women scientists, engineers, and mathematicians throughout history, facing challenges, overcoming obstacles, and striving to make their mark in the male-dominated world of STEM.
       </DescDiv>
     <ButtonDiv>
         <Button className='Button' onClick={()=>{onClick()}}>Start Game</Button>

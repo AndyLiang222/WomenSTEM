@@ -6,29 +6,74 @@
             "preReq":{
                 "health": 0,
                 "rep": 0,
-                "money": 0
+                "salary": 0
             },
             "options":[
                 {
                     "desc":"Sciences",
-                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a researcher for a big science organization. Biology and Chemistry career are most common for women as 60% and 50% of degrees respectively are earned by women.",
+                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a researcher for a big science organization. Biology and Chemistry career are most common for women as 60% and 50% of degrees respectively are earned by women. The average annual salary of a women in sciences is $59,242.",
                     "health": 0,
                     "rep":0,
-                    "money":0
+                    "salary":59242
                 },
                 {
                     "desc":"Engineering",
-                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a mechanical engineer for a car manufacturer. Only around 1 in 5 of engineering degrees are earned by women.",
+                    "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a mechanical engineer for a car manufacturer. Only around 1 in 5 of engineering degrees are earned by women. The average annual salary of a women in engineering is $69,416.",
                     "health": 0,
                     "rep":0,
-                    "money":0
+                    "salary":69416
                 },
                 {
                     "desc":"Computer Science",
-                    "resultDesc":"The Computer field is one of the most male dominated fields. Only about 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company.",
+                    "resultDesc":"The Computer field is one of the most male dominated fields. Only about 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company. The average annual salary of a women in computers is $86,157.",
                     "health": 0,
                     "rep":0,
-                    "money":0
+                    "salary":86157
+                },
+                {
+                    "desc":"Computer Science",
+                    "resultDesc":"The Computer field is one of the most male dominated fields. Only about 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company. The average annual salary of a women in computers is $86,157.",
+                    "health": -100,
+                    "rep":0,
+                    "salary":86157
+                }
+            ]
+        },
+        {
+            "desc": "Your open you email and notice a suspicious new email from your boss scheduling a meeting with you today at 5:00pm. You respond and anxiously wait for the time to come.",
+            "locked":true,
+            "preReq":{
+                "day": 1,
+                "health": 0,
+                "rep": 0,
+                "salary": 0
+            },
+            "options":[
+                {
+                    "desc":"Continue",
+                    "health": 0,
+                    "rep":0,
+                    "salary":0,
+                    "resultDesc":"You have been fired💀."
+                }
+            ]
+        },
+        {
+            "desc": "For the past few weeks you feel as though work has been taking a significant toll on your mental health inside and outside of work. You decide that the gender in-equality in STEM and the effects it has on you is too much.",
+            "locked":true,
+            "preReq":{
+                "day": 1,
+                "health": 0,
+                "rep": 0,
+                "salary": 0
+            },
+            "options":[
+                {
+                    "desc":"Continue",
+                    "health": 0,
+                    "rep":0,
+                    "salary":0,
+                    "resultDesc":"You quit your job💀."
                 }
             ]
         },
@@ -39,21 +84,21 @@
                 "day": 1,
                 "health": 0,
                 "rep": 0,
-                "money": 0
+                "salary": 0
             },
             "options":[
                 {
                     "desc":"Give in, say Yes",
                     "health": -20,
                     "rep":5,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You begrudgingly say yes and schedule a date."
                 },
                 {
                     "desc":"Keep Refusing",
                     "health": 0,
                     "rep":-10,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"He keeps on pushing but you stay strong on your stance until he eventually gives up. 36% of women in STEM say sexual harassment is a problem in their workplace."
                     
                 },
@@ -61,7 +106,7 @@
                     "desc":"Report to HR",
                     "health": -5,
                     "rep":-30,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You report him to HR and he gets a warning. You notice that coworkers around you are becoming less friendly and uneasy around you."
 
                     
@@ -75,28 +120,28 @@
                 "day": 1,
                 "health": 0,
                 "rep": 0,
-                "money": 0
+                "salary": 0
             },
             "options":[
                 {
                     "desc":"Ignore",
                     "health": -5,
                     "rep":0,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You say nothing and your boss assigns you a entry level task that takes you only a couple hours. 29% of women in STEM workplaces say they were treated as not competent."
                 },
                 {
                     "desc":"Confront in meeting",
                     "health": 5,
                     "rep":5,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You immediately stand up stating you are more than qualified to complete this task. Your stunned co-workers are silent for a moment and give you the difficult task. 64% of women believe that they feel the need to prove themselves at work in STEM jobs."
                 },
                 {
                     "desc":"Confront after meeting",
                     "health": 0,
                     "rep":-5,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You wait until the meeting is over to confront your co-worker once everyone leaves. You tell him how you didn’t appreciate his comments and would like to be treated as equals. He says that the meeting is over and there’s nothing he can do about it then gives a half-hearted apology."
                 }
             ]
@@ -108,21 +153,21 @@
                 "day": 1,
                 "health": 0,
                 "rep": 0,
-                "money": 0
+                "salary": 0
             },
             "options":[
                 {
                     "desc":"Ignore",
                     "health": -5,
                     "rep":0,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You decide its not worth the risk to confront and you make enough as is. 29% of women make less money than a male doing the same job."
                 },
                 {
                     "desc":"Confront your boss",
                     "health": 0,
                     "rep":0,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You arrange a meeting with your boss to discuss the disparity in your compensation. Throughout the conversation, he evades the topic until eventually concluding by saying he will look into it."
                 }
             ]
@@ -134,47 +179,47 @@
                 "day": 1,
                 "health": 0,
                 "rep": 0,
-                "money": 0
+                "salary": 0
             },
             "options":[
                 {
                     "desc":"Ignore",
                     "health": 1,
                     "rep":-1,
-                    "money":1,
+                    "salary":1,
                     "resultDesc":"You decide its not worth the risk to confront and you like your job anyway. 31% of women say their workplace pays too little attention to increasing gender diversity."
                 },
                 {
                     "desc":"Confront your boss",
                     "health": 0,
                     "rep":0,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"You arrange a meeting with your boss to address the lack of gender diversity. Your boss tells you that there is no issue and every worker here is treated equally no matter their gender. 31% of women say their workplace pays too little attention to increasing gender diversity. "
                 }
             ]
         },
         {
-            "desc": "Event 3",
+            "desc": "Template",
             "locked":false,
             "preReq":{
                 "day": 1,
                 "health": 0,
                 "rep": 0,
-                "money": 0
+                "salary": 0
             },
             "options":[
                 {
                     "desc":"Option1",
                     "health": 1,
                     "rep":-1,
-                    "money":1,
+                    "salary":1,
                     "resultDesc":"Result of the Choice 3"
                 },
                 {
                     "desc":"Option2",
                     "health": 0,
                     "rep":50,
-                    "money":0,
+                    "salary":0,
                     "resultDesc":"Result of the Choice 2",
                     "nextEvent":2
                 }

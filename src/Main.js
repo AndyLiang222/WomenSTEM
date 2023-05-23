@@ -3,7 +3,18 @@ import data from './data.json'
 import React,{useState} from "react"
 import styled from 'styled-components';
 import Components from './Components.js'
+const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0
+
+});
 const {Button, Background} = Components
+const TitleDiv = styled.div`
+    padding: 30px;
+    font-family: fantasy;
+
+`
 const DescDiv = styled.div`
     padding: 0px 300px;
     margin: 75px 0px;
@@ -19,28 +30,33 @@ const OptionButton = styled(Button)`
     width: 300px;
     margin:10px;
 `
-function Main() {
-    
-    const checks = ["day", "health", "rep", "money"]
+function Main(props) {
+    const {endGame} = props.props
+    const checks = ["day", "health", "rep", "salary"]
    const [event, setEvent] = useState(0)
    const [chosenOption, setchosenOption] = useState(undefined)
-  const [stats, setStats] = useState({day: 0,health: 100, rep: 30, money: 0})
-  const {money, health, rep} = stats
+  const [stats, setStats] = useState({day: 0,health: 100, rep: 30, salary: 0})
+  const {salary, health, rep} = stats
   const {events} = data
   const curEvent = events[event];
 
   function optionSelect(idx){
     setchosenOption(curEvent["options"][idx])
     console.log(curEvent["options"][idx])
-    setStats({day: stats.day,health: stats.health+curEvent["options"][idx].health, rep: stats.rep+curEvent["options"][idx].rep, money: stats.money+curEvent["options"][idx].money})
+    setStats({day: stats.day,health: stats.health+curEvent["options"][idx].health, rep: stats.rep+curEvent["options"][idx].rep, salary: stats.salary+curEvent["options"][idx].salary})
   }
   function newEvent(){
-    var nextEvent = Math.floor(Math.random() * events.length)
-    if(money < 0 || health < 0){
-        //Make the player lose
+    if(event == 1 || event == 2){
+        endGame();
     }
-    else if(rep < 0){
+    var nextEvent = Math.floor(Math.random() * events.length)
+    if(salary < 0 || health <= 0){
+        //Make the player lose
+        nextEvent = 2
+    }
+    else if(rep <= 0){
         //make player get fired
+        nextEvent = 1
     }
     else if(chosenOption["nextEvent"]){
         nextEvent = chosenOption["nextEvent"]
@@ -64,13 +80,13 @@ function Main() {
   }
   return (
     <div className="Main">
-      <div className='Title'>
+      <TitleDiv className='Title'>
         Day {stats.day}
-      </div>
+      </TitleDiv>
       <div className='Stats'>
-        <div className='Health'>Mental Health: {stats.health}</div>
-        <div className='Rep'>Reputation:{stats.rep}</div>
-        <div className='Money'>Money: {stats.money}</div>
+        <div className='Health'><b>Mental Health:</b> {stats.health}</div>
+        <div className='Rep'><b>Reputation:</b> {stats.rep}</div>
+        <div className='salary'><b>Salary: </b>{formatter.format(stats.salary)}</div>
       </div>
       <div className='Container'>
         {!chosenOption &&
