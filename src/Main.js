@@ -35,7 +35,7 @@ function Main(props) {
     const checks = ["day", "health", "rep", "salary"]
    const [event, setEvent] = useState(0)
    const [chosenOption, setchosenOption] = useState(undefined)
-  const [stats, setStats] = useState({day: 0,health: 100, rep: 30, salary: 0})
+  const [stats, setStats] = useState({day: 0,health: 100, rep: 30, salary: 1})
   const {salary, health, rep} = stats
   const {events} = data
   const curEvent = events[event];
@@ -45,7 +45,7 @@ function Main(props) {
   function optionSelect(idx){
     setchosenOption(curEvent["options"][idx])
     console.log(curEvent["options"][idx])
-    setStats({day: stats.day,health: Math.max(0,stats.health+curEvent["options"][idx].health), rep: Math.max(0,stats.rep+curEvent["options"][idx].rep), salary: Math.max(0,stats.salary+curEvent["options"][idx].salary)})
+    setStats({day: stats.day,health: Math.max(0,stats.health+curEvent["options"][idx].health), rep: Math.max(0,stats.rep + curEvent["options"][idx].rep), salary: Math.max(0,Math.floor((((curEvent["options"][idx].salary)?curEvent["options"][idx].salary:0)+1.00)*stats.salary))})
   }
   function newEvent(){
     if(event == 1 || event == 2){
@@ -92,19 +92,18 @@ function Main(props) {
       </div>
       <div className='Container'>
         {!chosenOption &&
-            
-                <div className='Choice'>
-                    <DescDiv className='description'>
-                        {curEvent["desc"]}
-                    </DescDiv>
-                    
-                    <div className='Options'>
-                        <ButtonDiv className = 'Buttons'>
-                            {curEvent["options"].map((option,idx)=>{return <OptionButton onClick={() => {optionSelect(idx)}}>{option["desc"]}</OptionButton>})}
-                        </ButtonDiv>
-                    </div>`
-                </div>
-            }
+            <div className='Choice'>
+                <DescDiv className='description'>
+                    {curEvent["desc"]}
+                </DescDiv>
+                
+                <div className='Options'>
+                    <ButtonDiv className = 'Buttons'>
+                        {curEvent["options"].map((option,idx)=>{return <OptionButton onClick={() => {optionSelect(idx)}}>{option["desc"]}</OptionButton>})}
+                    </ButtonDiv>
+                </div>`
+            </div>
+        }
         {chosenOption &&
             <div className='Result'>
                 <DescDiv className='Result-Desc'>{chosenOption.resultDesc}</DescDiv>
@@ -113,9 +112,7 @@ function Main(props) {
                         Continue
                     </OptionButton> 
                 </ButtonDiv>
-                
             </div>
-            
         }
       </div>
     </div>

@@ -14,21 +14,21 @@
                     "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a researcher for a big science organization. Biology and Chemistry career are most common for women as 60% and 50% of degrees respectively are earned by women. The average annual salary of a women in sciences is $59,242.",
                     "health": 0,
                     "rep":0,
-                    "salary":59242
+                    "salary":59241
                 },
                 {
                     "desc":"Engineering",
                     "resultDesc":"After studying for many years and accumulating tons of debt, you have been hired as a mechanical engineer for a car manufacturer. Only around 1 in 5 of engineering degrees are earned by women. The average annual salary of a women in engineering is $69,416.",
                     "health": 0,
                     "rep":0,
-                    "salary":69416
+                    "salary":69415
                 },
                 {
                     "desc":"Computer Science",
                     "resultDesc":"The Computer field is one of the most male dominated fields. Only about 38% of women who major in computers actually work in computers; However, after studying for many years to earn your degree and going through many interview processes, you have been hired to work in an entry level position in a large tech company. The average annual salary of a women in computers is $86,157.",
                     "health": 0,
-                    "rep":0,
-                    "salary":86157
+                    "rep":100,
+                    "salary":86156
                 }
                 
             ]
@@ -178,9 +178,9 @@
             "options":[
                 {
                     "desc":"Ignore",
-                    "health": 1,
-                    "rep":-1,
-                    "salary":1,
+                    "health": 0,
+                    "rep":0,
+                    "salary":0,
                     "resultDesc":"You decide its not worth the risk to confront and you like your job anyway. 31% of women say their workplace pays too little attention to increasing gender diversity."
                 },
                 {
@@ -193,8 +193,27 @@
             ]
         },
         {
-            "desc": "Template",
+            "desc": "Your open you email and notice a suspicious new email from your boss scheduling a meeting with you today at 5:00pm. At the meeting, he tells you that he want the recognize the high quality work you have been doing during your time working here.",
             "locked":false,
+            "preReq":{
+                "day": 5,
+                "health": 0,
+                "rep": 100,
+                "salary": 0
+            },
+            "options":[
+                {
+                    "desc":"Continue",
+                    "health": 0,
+                    "rep":-50,
+                    "salary":0.3,
+                    "resultDesc":"You have been given a promotion and raise🥳. "
+                }
+            ]
+        },
+        {
+            "desc": "Template",
+            "locked":true,
             "preReq":{
                 "day": 1,
                 "health": 0,
@@ -204,9 +223,9 @@
             "options":[
                 {
                     "desc":"Option1",
-                    "health": 1,
-                    "rep":-1,
-                    "salary":1,
+                    "health": 0,
+                    "rep":0,
+                    "salary":0,
                     "resultDesc":"Result of the Choice 3"
                 },
                 {
