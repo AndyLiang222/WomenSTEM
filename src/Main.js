@@ -9,6 +9,7 @@ const formatter = new Intl.NumberFormat('en-US', {
     maximumFractionDigits: 0
 
 });
+const Events = 11;
 const {Button, Background} = Components
 const TitleDiv = styled.div`
     padding: 30px;
@@ -17,7 +18,7 @@ const TitleDiv = styled.div`
 `
 const DescDiv = styled.div`
     padding: 0px 300px;
-    margin: 75px 0px;
+    margin: 50px 0px;
 `
 const ButtonDiv = styled.div`
     display: flex;
@@ -30,7 +31,19 @@ const OptionButton = styled(Button)`
     width: 300px;
     margin:10px;
 `
+const ImgContainer = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin: 25px 0px;
+`
+var images = [];
+    for(var i = 0;i< Events;i++){
+        images[i] = require('./Images/' + i + '.png');
+}
 function Main(props) {
+    
+    
     const {endGame} = props.props
     const checks = ["day", "health", "rep", "salary"]
    const [event, setEvent] = useState(0)
@@ -39,6 +52,13 @@ function Main(props) {
   const {salary, health, rep} = stats
   const {events} = data
   const curEvent = events[event];
+  const ImageDiv = styled.div`
+        background-image: url(${images[event]});
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+        width: 300px;
+  `
   function format(x){
     
   }
@@ -54,11 +74,11 @@ function Main(props) {
     var nextEvent = Math.floor(Math.random() * events.length)
     if(salary < 0 || health <= 0){
         //Make the player lose
-        nextEvent = 2
+        nextEvent = 3
     }
     else if(rep <= 0){
         //make player get fired
-        nextEvent = 1
+        nextEvent = 2
     }
     else if(chosenOption["nextEvent"]){
         nextEvent = chosenOption["nextEvent"]
@@ -94,6 +114,12 @@ function Main(props) {
       <div className='Container'>
         {!chosenOption &&
             <div className='Choice'>
+                <ImgContainer>
+                    <ImageDiv>
+                        
+                    </ImageDiv>
+                </ImgContainer>
+                
                 <DescDiv className='description'>
                     {curEvent["desc"]}
                 </DescDiv>

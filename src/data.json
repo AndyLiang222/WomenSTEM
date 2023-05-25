@@ -261,7 +261,7 @@
             ]
         },
         {
-            "desc": "Your open you email and notice a suspicious new email from your boss scheduling a meeting with you today at 5:00pm. At the meeting, he tells you that he want the recognize the high quality work you have been doing during your time working here.",
+            "desc": "Your open you email and notice a suspicious new email from your boss scheduling a meeting with you today at 5:00pm.",
             "locked":false,
             "preReq":{
                 "day": 5,
