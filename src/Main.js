@@ -12,7 +12,7 @@ const formatter = new Intl.NumberFormat('en-US', {
 const Events = 11;
 const {Button, Background} = Components
 const TitleDiv = styled.div`
-    padding: 30px;
+    padding: 20px;
     font-family: fantasy;
 
 `
