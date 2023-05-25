@@ -1,14 +1,23 @@
 {
   "files": {
     "main.css": "/WomenSTEM/static/css/main.073c9b0a.css",
-    "main.js": "/WomenSTEM/static/js/main.b827bf77.js",
+    "main.js": "/WomenSTEM/static/js/main.d168971b.js",
+    "static/media/1.png": "/WomenSTEM/static/media/1.6f6aea8edb602ee6e2e1.png",
+    "static/media/8.png": "/WomenSTEM/static/media/8.35a8c616510f865c9fc7.png",
+    "static/media/10.png": "/WomenSTEM/static/media/10.4342e53967d9eb8ef93f.png",
+    "static/media/5.png": "/WomenSTEM/static/media/5.85f4b235eb27c2236d62.png",
+    "static/media/6.png": "/WomenSTEM/static/media/6.7dd1577de2ee085d9caf.png",
+    "static/media/3.png": "/WomenSTEM/static/media/3.9485c907b020a45c1b53.png",
+    "static/media/2.png": "/WomenSTEM/static/media/2.6f3f279697897cecd92a.png",
+    "static/media/9.png": "/WomenSTEM/static/media/9.6f3f279697897cecd92a.png",
+    "static/media/7.png": "/WomenSTEM/static/media/7.c5acbf0ca0bcb66594bd.png",
     "static/media/Background.avif": "/WomenSTEM/static/media/Background.8d1f228316cabb28bb7f.avif",
     "index.html": "/WomenSTEM/index.html",
     "main.073c9b0a.css.map": "/WomenSTEM/static/css/main.073c9b0a.css.map",
-    "main.b827bf77.js.map": "/WomenSTEM/static/js/main.b827bf77.js.map"
+    "main.d168971b.js.map": "/WomenSTEM/static/js/main.d168971b.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b827bf77.js"
+    "static/js/main.d168971b.js"
   ]
 }
