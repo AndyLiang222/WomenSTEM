@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WomenSTEM/static/css/main.073c9b0a.css",
-    "main.js": "/WomenSTEM/static/js/main.d168971b.js",
+    "main.js": "/WomenSTEM/static/js/main.af92e844.js",
     "static/media/1.png": "/WomenSTEM/static/media/1.6f6aea8edb602ee6e2e1.png",
     "static/media/8.png": "/WomenSTEM/static/media/8.35a8c616510f865c9fc7.png",
     "static/media/10.png": "/WomenSTEM/static/media/10.4342e53967d9eb8ef93f.png",
@@ -14,10 +14,10 @@
     "static/media/Background.avif": "/WomenSTEM/static/media/Background.8d1f228316cabb28bb7f.avif",
     "index.html": "/WomenSTEM/index.html",
     "main.073c9b0a.css.map": "/WomenSTEM/static/css/main.073c9b0a.css.map",
-    "main.d168971b.js.map": "/WomenSTEM/static/js/main.d168971b.js.map"
+    "main.af92e844.js.map": "/WomenSTEM/static/js/main.af92e844.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d168971b.js"
+    "static/js/main.af92e844.js"
   ]
 }
